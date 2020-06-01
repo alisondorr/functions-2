@@ -60,7 +60,6 @@ console.log(exponentiation)
 function factorial(f) {
     let s = 1
     for (let i = 1; i <= f; i++) {
-        //fact = multiply(f, (f - 1))
         s = multiply(s, i)
     }
     return s
