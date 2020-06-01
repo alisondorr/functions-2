@@ -54,14 +54,14 @@ console.log(exponentiation)
 
 //A factorial multiplies a given number by every number below it.For example, "5 factorial"(usually symbolized by 5! in Mathematics) would be:
 
-//5 * 4 * 3 * 2 * 1 = 120
+//5 * 4 * 3 * 2s * 1 = 120
 //For example, calling factorial(4) should return a result of 24.
 //let f = 5
 function factorial(f) {
     let s = 1
-    for (let i = 1; i < f; i++) {
+    for (let i = 1; i <= f; i++) {
         //fact = multiply(f, (f - 1))
-        s = multiply(s, i + 1)
+        s = multiply(s, i)
     }
     return s
 }
@@ -96,7 +96,10 @@ function fibonacci(b) {
 
         fib = add(h[b - 2], h[b - 3])
     }
-    return fib
+    return fib;
+    return h[0];
+    return h[1];
+    return h[i];
 }
 let fibonacciNum = fibonacci(8)
 console.log(fibonacciNum)
